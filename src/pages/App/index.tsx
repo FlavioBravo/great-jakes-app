@@ -4,9 +4,9 @@ import FirmFactsTemplate from '../../components/templates/Firm-Facts-Template';
 
 function App() {
   return (
-    <div className={Styles.app}>
+    <main className={Styles.app}>
       <FirmFactsTemplate />
-    </div>
+    </main>
   );
 }
 

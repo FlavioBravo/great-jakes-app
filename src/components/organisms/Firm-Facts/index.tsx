@@ -5,7 +5,7 @@ import Button from "../../atoms/Button";
 
 const FirmFacts = () => {
   return (
-    <div className={Styles.firmFacts}>
+    <section className={Styles.firmFacts}>
       <h1 className={Styles.firmFacts__title}>Firm Facts</h1>
       <div className={Styles.firmFacts__divider}></div>
       <div className={Styles.firmFacts__layout}>
@@ -69,7 +69,7 @@ const FirmFacts = () => {
           </FirmFactCard>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

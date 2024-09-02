@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Other technologies are used like sass and typescript, and atomic design for the project structure.
+
+Finally, this project is a challenge from [Great Jakes](https://www.greatjakes.com/).
+
+# Figma Design 
+
+This design was developed according to [Figma Design](https://www.figma.com/design/36efjlny7OEaubY4BktKqa/Styling-Challenge?node-id=0-1&node-type=CANVAS&t=jWO3fALd5HQm2Y4R-0).
 
 ## Available Scripts
 
@@ -44,3 +50,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn Atomic Design, check out the [Atomic Design documentation](https://bradfrost.com/blog/post/atomic-web-design/).
+
+To learn Sass, check out the [Sass documentation](https://sass-lang.com/).
+
+To learn Typescript, check out the [Typescript documentation](https://www.typescriptlang.org/).

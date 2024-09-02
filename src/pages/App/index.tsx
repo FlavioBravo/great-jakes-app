@@ -1,11 +1,11 @@
 import React from 'react';
 import Styles from './app.module.scss';
-import FirmFacts from '../../components/Firm-Facts';
+import FirmFactsTemplate from '../../components/templates/Firm-Facts-Template';
 
 function App() {
   return (
     <div className={Styles.app}>
-      <FirmFacts />
+      <FirmFactsTemplate />
     </div>
   );
 }

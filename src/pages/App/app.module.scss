@@ -1,8 +1,55 @@
+@use "../../styles/utils/mixins" as mixin;
+@import "../../styles/base/variables";
+
 .app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: $color-dark-blue;
+
+  @include mixin.md {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+    h1 {
+      font-size: $font-size-xlg;
+      font-weight: $font-weight-400;
+      line-height: $line-height-xlg;
+    }
+  }
+
+  @include mixin.lg {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+    h1 {
+      font-size: $font-size-xxlg;
+      font-weight: $font-weight-400;
+      line-height: $line-height-xxlg;
+    }
+  }
+
+  @include mixin.xl {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+    h1 {
+      font-size: $font-size-xxxlg;
+      font-weight: $font-weight-400;
+      line-height: $line-height-xxxlg;
+    }
+  }
+
+  @include mixin.xxl {
     height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-    background-color: #2D3E4E;
+    width: 100%;
+    padding-bottom: 0;
+    h1 {
+      font-size: $font-size-xxxlg;
+      font-weight: $font-weight-400;
+      line-height: $line-height-xxxlg;
+    }
+  }
 }

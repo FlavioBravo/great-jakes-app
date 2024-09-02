@@ -1,0 +1,108 @@
+@use "../../../styles/utils/mixins" as mixin;
+@import "../../../styles/base/variables";
+
+.firmFacts {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $font-open-sans;
+    font-size: 60px;
+    font-weight: $font-weight-400;
+    line-height: 66px;
+    color: $color-white;
+  }
+  &__divider {
+    width: 100%;
+    border: 1px solid $color-white;
+    opacity: 0.2;
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+  &__layout {
+    display: grid;
+    gap: 16px;
+
+    @include mixin.md {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+    }
+
+    @include mixin.lg {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    @include mixin.xl {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include mixin.xxl {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    background-color: $color-white;
+    @include mixin.flex-row-center;
+
+    &:nth-child(1) {
+      width: 364px;
+      @include mixin.md {
+        grid-row: span 1;
+        height: 322px;
+      }
+
+      @include mixin.lg {
+        grid-row: span 2;
+        height: 662px;
+      }
+
+      @include mixin.xl {
+        grid-row: span 3;
+        height: 998px;
+      }
+
+      @include mixin.xxl {
+        grid-row: span 2;
+        height: 662px;
+      }
+    }
+    &:nth-child(2) {
+      grid-column: span 1;
+      width: 364px;
+      height: 322px;
+    }
+    &:nth-child(3) {
+      grid-column: span 1;
+      width: 364px;
+      height: 322px;
+    }
+    &:nth-child(4) {
+      grid-column: span 1;
+      width: 364px;
+      height: 322px;
+    }
+    &:nth-child(5) {
+      grid-column: span 1;
+      width: 364px;
+      height: 322px;
+    }
+    &:nth-child(6) {
+      grid-column: span 1;
+      width: 364px;
+      height: 322px;
+    }
+    &:nth-child(7) {
+      grid-column: span 1;
+      width: 364px;
+      height: 322px;
+    }
+  }
+
+  &__bottomRow {
+    margin-top: -140px;
+  }
+}

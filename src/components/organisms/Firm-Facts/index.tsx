@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./firm-facts.module.scss";
-import FirmFactCard from "../Firm-Fact-Card";
-import Button from "../Button";
+import FirmFactCard from "../../molecules/Firm-Fact-Card";
+import Button from "../../atoms/Button";
 
 const FirmFacts = () => {
   return (

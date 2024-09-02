@@ -22,7 +22,7 @@ const Button = ({ variant = "default", disabled = false, text, customClass }: Pr
         </span>
       ) : (
         <>
-          <IconSearch />
+          <IconSearch customClass={Styles.button__icon} />
           <span className={`${Styles.button__text} ${Styles.icon}`}>
             {text}
           </span>
